@@ -1,5 +1,6 @@
 import React from 'react';
 import { Download as DownloadIcon, Smartphone, Shield, Zap } from 'lucide-react';
+import { BrandIcon, BrandIconBig } from './Logo';
 
 interface DownloadProps {
   appName: string;
@@ -21,14 +22,10 @@ export const Download: React.FC<DownloadProps> = ({ appName, downloadUrl, versio
           
           <div className="bg-white rounded-2xl p-8 max-w-md mx-auto mb-12">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-sky-500 rounded-xl flex items-center justify-center relative">
-                <div className="w-10 h-8 bg-green-500 rounded-sm flex items-center justify-center relative">
-                  <span className="text-white text-sm font-bold">$</span>
+                <div className="w-16 h-16 bg-sky-500 rounded-xl flex items-center justify-center relative">
+                <BrandIcon width='w-10' height='h-8'/>
                 </div>
-                <div className="absolute bottom-2 left-2 w-8 h-5 bg-white rounded-full opacity-90"></div>
-              </div>
             </div>
-            
             <h3 className="text-2xl font-bold text-gray-900 mb-2">{appName}</h3>
             <p className="text-gray-600 mb-6">Versión {version}</p>
             

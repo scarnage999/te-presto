@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo } from './Logo';
+import { BrandIcon } from './Logo';
 
 interface HeaderProps {
   appName: string;
@@ -10,7 +10,13 @@ export const Header: React.FC<HeaderProps> = ({ appName }) => {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <Logo appName={appName} />
+             <div className="flex items-center space-x-3">
+                {/* Logo using the provided design */}
+                <div className="w-12 h-12 bg-sky-500 rounded-xl flex items-center justify-center relative">  
+                    <BrandIcon width='w-8' height='h-6'/>
+                </div>
+                <span className="text-xl font-bold text-gray-900">{appName}</span>
+              </div>
           
           <nav className="hidden md:flex space-x-8">
             <a href="#features" className="text-gray-600 hover:text-sky-600 transition-colors">

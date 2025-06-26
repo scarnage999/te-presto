@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import { Logo } from './Logo';
+import { BrandIcon } from './Logo';
 
 interface FooterProps {
   appName: string;
@@ -12,7 +12,13 @@ export const Footer: React.FC<FooterProps> = ({ appName }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-           <Logo appName={appName} />
+            <div className="flex items-center space-x-3 mb-4">
+                <div className="w-10 h-10 bg-sky-500 rounded-xl flex items-center justify-center relative">
+                  <BrandIcon width='w-6' height='h-5'/>
+                </div>
+              
+              <span className="text-xl font-bold">{appName}</span>
+            </div>
             <p className="text-gray-400 mb-6 max-w-md">
               La aplicación más confiable para gestionar tus préstamos y deudas. 
               Mantén el control total de tus finanzas personales.
