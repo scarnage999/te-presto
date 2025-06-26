@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrandIcon } from './Logo';
+import { BrandIcon } from './shared/BrandIcon';
 
 interface HeaderProps {
   appName: string;

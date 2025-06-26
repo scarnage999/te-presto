@@ -1,6 +1,6 @@
 import React from 'react';
 import { Download as DownloadIcon, Smartphone, Shield, Zap } from 'lucide-react';
-import { BrandIcon, BrandIconBig } from './Logo';
+import { BrandIcon } from './shared/BrandIcon';
 
 interface DownloadProps {
   appName: string;
