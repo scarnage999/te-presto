@@ -7,7 +7,7 @@ export class MockAppDataService implements AppDataService {
       name: 'Te Presto',
       tagline: 'Lleva el control de tus préstamos y deudas',
       description: 'La aplicación más fácil y confiable para gestionar tus préstamos personales, recordar pagos y mantener un historial completo de tus transacciones financieras.',
-      downloadUrl: '#download-apk',
+      downloadUrl: '../../assets/te-presto.apk',
       version: '1.0.0'
     };
   }
