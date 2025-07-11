@@ -6,6 +6,7 @@ import { Testimonials } from '../components/Testimonials';
 import { Download } from '../components/Download';
 import { Footer } from '../components/Footer';
 import { MockAppDataService } from '../../infrastructure/services/MockAppDataService';
+import { CookieConsent } from '../components/CookieConsent';
 
 export const LandingPage: React.FC = () => {
   const appDataService = new MockAppDataService();
@@ -16,14 +17,13 @@ export const LandingPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header appName={appInfo.name} />
-      
       <Hero
         title={appInfo.name}
         tagline={appInfo.tagline}
         description={appInfo.description}
         downloadUrl={appInfo.downloadUrl}
       />
-      
+      <CookieConsent />
       <Features features={features} />
       
       <Testimonials testimonials={testimonials} />
